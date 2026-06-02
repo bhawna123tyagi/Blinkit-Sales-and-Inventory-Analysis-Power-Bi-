@@ -1,0 +1,29 @@
+## 🧹 Step 1: Data Cleaning & Transformation (Power Query)
+
+Before building the dashboard, the raw data was loaded into Power BI and transformed using Power Query Editor to ensure accuracy:
+
+* *Data Type Profiling:* Adjusted data types for all columns (e.g., changing 'Sales' to Currency, 'Rating' to Decimal, etc.).
+* *Standardization:* Cleaned the Item Fat Content column to ensure consistency (e.g., replacing variations like "low fat" or "LF" to a standard "Low Fat", and "reg" to "Regular").
+* *Handling Missing Values:* Addressed blank or null values in columns like Item Weight to ensure accurate aggregations.
+
+## 🧮 Step 2: Data Modeling & DAX Measures
+
+Created custom DAX measures to calculate the core Business KPIs required for the dashboard.
+
+*Key Measures Created:*
+
+* *Total Sales:* The overall revenue generated from all items sold.
+* *Average Sales:* The average revenue per sale.
+* *Number of Items:* The total count of different items sold in the dataset.
+* *Average Rating:* The average customer rating for items sold.
+
+## 📊 Step 3: Visualizations & Dashboard Build
+
+Designed an interactive dashboard with various charts to break down the sales and inventory data visually.
+
+1. *Total Sales by Fat Content:* (Donut/Pie Chart) Analyzing the impact of fat content on total revenue.
+2. *Total Sales by Item Type:* (Bar Chart) Identifying top-performing item categories (e.g., Fruits and Vegetables, Snack Foods).
+3. *Fat Content by Outlet for Total Sales:* (Stacked Column Chart) Comparing fat content preferences across different outlets.
+4. *Sales by Outlet Size:* (Donut/Pie Chart) Correlating outlet size (High, Medium, Small) with total sales.
+5. *Sales by Outlet Location:* (Funnel/Map) Assessing geographic performance across Tier 1, Tier 2, and Tier 3 locations.
+6. *All Metrics by Outlet Type:* (Matrix Table) A comprehensive breakdown of Total Sales, Average Sales, No. of Items, and Average Rating split by Supermarket Types and Grocery Stores.
